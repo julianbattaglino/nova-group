@@ -404,7 +404,7 @@ a#active.nav-link.underline {
 
 /*** Section Intro Banner ***/
 #intro {
-    background: url(./assets/images/intro.webp) lightgray 50%;
+    background: url(./assets/images/intro.jpg) lightgray 50%;
     height: 100vh;
     background-size: cover;
     display: flex;
