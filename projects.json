@@ -1,0 +1,111 @@
+[
+    {
+      "id": "1",
+      "title": "Village",
+      "subtitle": "Retail y Entretenimiento",
+      "description": "Un concepto pionero en el entretenimiento y el desarrollo inmobiliario, Village ha transformado la industria con complejos en Mendoza, Pilar, Avellaneda, Rosario, Neuquén y Recoleta. Con la integración de cines, restaurantes, locales comerciales y espacios de recreación, Village se ha consolidado como el referente en centros de destino en Argentina.",
+      "image": "assets/images/project-sliders/Village/1.jpg",
+      "sliderImages": [
+        "assets/images/project-sliders/Village/1.jpg",
+        "assets/images/project-sliders/Village/2.jpg",
+        "assets/images/project-sliders/Village/3.jpg",
+        "assets/images/project-sliders/Village/4.jpg",
+        "assets/images/project-sliders/Village/5.jpg",
+        "assets/images/project-sliders/Village/6.jpg",
+        "assets/images/project-sliders/Village/7.jpg",
+        "assets/images/project-sliders/Village/8.jpg",
+        "assets/images/project-sliders/Village/9.jpg",
+        "assets/images/project-sliders/Village/10.jpg",
+        "assets/images/project-sliders/Village/11.jpg",
+        "assets/images/project-sliders/Village/12.jpg"
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4513000170227!2d-3.6983218!3d40.4210047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228867b6bf839%3A0x1cf6b3314f582b55!2sC.%20de%20Barbieri%2C%207%2C%2028004%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1699635566986!5m2!1ses-419!2sar",
+      "whatsappLink": "https://wa.me/34609631592?text=Hola%20necesito%20información%20sobre%20Barbieri%20Madrid",
+      "filterClass": "retail"
+    },
+    {
+      "id": "2",
+      "title": "Edificio Barrio Parque",
+      "subtitle": "Residencial",
+      "image": "assets/images/grid/la-aguada-polo-grid.jpg",
+      "sliderImages": [
+        "assets/images/project-sliders/spain/papizza/papizza.jpg",
+        "assets/images/project-sliders/spain/papizza/papizza-1.jpg",
+        "assets/images/project-sliders/spain/papizza/papizza-2.jpg",
+        "assets/images/project-sliders/spain/papizza/papizza-3.jpg"
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.376794152787!2d-3.6994922!3d40.422654800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228862492abe5%3A0xf190fc0f5b7a15d8!2sC%2F%20de%20Hortaleza%2C%2045%2C%2028004%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1699637680768!5m2!1ses-419!2sar",
+      "whatsappLink": "https://wa.me/34609631592?text=Hola%20necesito%20información%20sobre%20Papizza%20Madrid",
+      "filterClass": "residencial"
+    },
+    {
+      "id": "3",
+      "title": "La Aguada Urban Residences",
+      "subtitle": "Residencial",
+      "image": "assets/images/grid/urban-residences.jpg",
+      "sliderImages": [
+        "assets/images/project-sliders/spain/comendadoras/comendadoras-1.jpg",
+        "assets/images/project-sliders/spain/comendadoras/comendadoras-2.jpg",
+        "assets/images/project-sliders/spain/comendadoras/comendadoras-3.jpg"
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.164781137815!2d-3.7090837!3d40.42735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228641a106f71%3A0xe4cf1563072f5f4e!2sPl.%20de%20las%20Comendadoras%2C%2028015%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1699643960010!5m2!1ses-419!2sar",
+      "whatsappLink": "https://wa.me/34609631592?text=Hola%20necesito%20información%20sobre%20Comendadoras",
+      "filterClass": "residencial"
+    },
+    {
+      "id": "4",
+      "title": "Concepción Condominios",
+      "subtitle": "Residencial",
+      "image": "assets/images/grid/la-concepcion.club-de-campo-grid.jpg",
+      "sliderImages": [
+        "assets/images/project-sliders/spain/conde-duque/conde-duque-1.jpg",
+        "assets/images/project-sliders/spain/conde-duque/conde-duque-2.jpg",
+        "assets/images/project-sliders/spain/conde-duque/conde-duque-3.jpg"
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3037.162198130726!2d-3.7107195!3d40.4274072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42286683a7f5f1%3A0x7f4a7949136159f6!2sCentro%20de%20Cultura%20Contempor%C3%A1nea%20Condeduque!5e0!3m2!1ses-419!2sar!4v1699644640027!5m2!1ses-419!2sar",
+      "whatsappLink": "https://wa.me/34609631592?text=Hola%20necesito%20información%20sobre%20Conde%20Duque",
+      "filterClass": "residencial"
+    },
+    {
+      "id": "5",
+      "title": "Terrus",
+      "subtitle": "Residencial",
+      "image": "assets/images/grid/village-grid.jpg",
+      "sliderImages": [
+        "assets/images/project-sliders/spain/san-millan/san-millan-1.jpg",
+        "assets/images/project-sliders/spain/san-millan/san-millan-2.jpg",
+        "assets/images/project-sliders/spain/san-millan/san-millan-3.jpg"
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.8780584027336!2d-3.707348299999999!3d40.4115521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227d5de2c4b51%3A0x47202e70ef54921f!2sLa%20Huerta%20de%20Almer%C3%ADa!5e0!3m2!1ses-419!2sar!4v1699902311333!5m2!1ses-419!2sar",
+      "whatsappLink": "https://wa.me/34609631592?text=Hola%20necesito%20información%20sobre%20San%20Millán",
+      "filterClass": "residencial"
+    },
+    {
+      "id": "6",
+      "title": "La Cañada Polo",
+      "subtitle": "Polo",
+      "image": "assets/images/grid/village-grid.jpg",
+      "sliderImages": [
+        "assets/images/project-sliders/spain/toledo/toledo-1.jpg",
+        "assets/images/project-sliders/spain/toledo/toledo-2.jpg",
+        "assets/images/project-sliders/spain/toledo/toledo-3.jpg"
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.932874649976!2d-3.7093137000000005!3d40.4103378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227d65e3988f5%3A0xa58654c8bb540520!2sC.%20de%20Toledo%2C%2058%2C%2028005%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1699903292367!5m2!1ses-419!2sar",
+      "whatsappLink": "https://wa.me/34609631592?text=Hola%20necesito%20información%20sobre%20Toledo%2058",
+      "filterClass": "polo"
+    },
+    {
+      "id": "7",
+      "title": "La Aguada Chica y Polo Club",
+      "subtitle": "Polo",
+      "image": "assets/images/grid/village-grid.jpg",
+      "sliderImages": [
+        "assets/images/project-sliders/spain/meson-de-paredes/meson-1.jpg",
+        "assets/images/project-sliders/spain/meson-de-paredes/meson-2.jpg",
+        "assets/images/project-sliders/spain/meson-de-paredes/meson-3.jpg"
+      ],
+      "location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.936811002602!2d-3.7044468999999998!3d40.410250600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422780019a6f5f%3A0x592fd877dd2a3f52!2sPascal%20Cafe!5e0!3m2!1ses-419!2sar!4v1699911474670!5m2!1ses-419!2sar",
+      "whatsappLink": "https://wa.me/34609631592?text=Hola%20necesito%20información%20sobre%20Mesón%20de%20Paredes",
+      "filterClass": "polo"
+    }
+  ]

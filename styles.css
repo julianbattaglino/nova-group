@@ -1,0 +1,1144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: 'Graphik';
+    src:
+        url("assets/fonts/Graphik/Graphik-Light.eot"),
+        url("assets/fonts/Graphik/Graphik-Light.eot#iefix") format("embedded-opentype"),
+        url("assets/fonts/Graphik/Graphik-Light.woff") format("woff"),
+        url("assets/fonts/Graphik/Graphik-Light.woff2") format("woff2"),
+        url("assets/fonts/Graphik/Graphik-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src:
+        url("assets/fonts/Graphik/Graphik-Regular.eot"),
+        url("assets/fonts/Graphik/Graphik-Regular.eot#iefix") format("embedded-opentype"),
+        url("assets/fonts/Graphik/Graphik-Regular.woff") format("woff"),
+        url("assets/fonts/Graphik/Graphik-Regular.woff2") format("woff2"),
+        url("assets/fonts/Graphik/Graphik-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src:
+        url("assets/fonts/Graphik/Graphik-Medium.eot"),
+        url("assets/fonts/Graphik/Graphik-Medium.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/Graphik/Graphik-Medium.woff") format("woff"),
+        url("assets/fonts/Graphik/Graphik-Medium.woff2") format("woff2"),
+        url("assets/fonts/Graphik/Graphik-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src:
+        url("assets/fonts/Graphik/Graphik-Semibold.eot"),
+        url("assets/fonts/Graphik/Graphik-Semibold.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/Graphik/Graphik-Semibold.woff") format("woff"),
+        url("assets/fonts/Graphik/Graphik-Semibold.woff2") format("woff2"),
+        url("assets/fonts/Graphik/Graphik-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src:
+        url("assets/fonts/Graphik/Graphik-Bold.eot"),
+        url("assets/fonts/Graphik/Graphik-Bold.eot?#iefix") format("embedded-opentype"),
+        url("assets/fonts/Graphik/Graphik-Bold.woff") format("woff"),
+        url("assets/fonts/Graphik/Graphik-Bold.woff2") format("woff2"),
+        url("assets/fonts/Graphik/Graphik-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+html {
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: "Graphik", sans-serif !important;
+}
+
+/* SCROLLBAR STYLES */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:  #242633;
+}
+
+/*** Bootstrap Resets ***/
+.container-fluid {
+    width: 90% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+}
+
+.row>* {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+ol,
+ul {
+    padding-left: 0 !important;
+}
+
+li {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.6em;
+    list-style-type: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:focus {
+    color: #242633 !important;
+}
+
+
+
+/*** Global Styles ***/
+main {
+    padding-top: 75px;
+}
+
+.padding-top {
+    padding-top: 25px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pt-2rem {
+    padding-top: 2rem;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+.custom-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.negro-branding {
+    color: #333 !important;
+}
+
+.blue-branding {
+    color: #242633 !important;
+}
+
+.rojo-branding {
+    color: #94122c !important;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Whatsapp Floating Button */
+.floating-wsp {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 120;
+    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99);
+}
+
+.floating-wsp:hover {
+    opacity: 1;
+}
+
+/* Go to top Button */
+.to-top {
+    background-color: #142869;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    z-index: 20;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+    position: fixed;
+    bottom: 10% !important;
+    z-index: 999999;
+}
+
+.slick-slider {
+    cursor: grab;
+
+}
+
+/*** MENU NAVBAR ***/
+/*Sub Menu Animation*/
+@keyframes slideIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+
+    0% {
+        -webkit-transform: translateY(1rem);
+        -webkit-opacity: 0;
+    }
+}
+
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+header {
+    background-color: #141414;
+    z-index: 999999 !important;
+}
+
+/* Transición suave para el encabezado pegajoso */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.05);
+    transition: top 0.3s ease;
+    /* Agrega una transición suave a la propiedad 'top' */
+}
+
+/* Header */
+nav.navbar {
+    width: 100%;
+    z-index: 4;
+    background-color: #fff !important;
+    padding: 15px 0;
+}
+
+ul.navbar-nav {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+}
+
+.dropdown-menu {
+    top: 4rem !important;
+    border-radius: 0 !important;
+    animation: slideIn 0.3s ease-in-out;
+
+}
+
+.logo {
+    width: 175px;
+    height: auto;
+}
+
+a.nav-link {
+    font-size: 18px;
+    color: #242633;
+    margin-left: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+a.nav-link:hover {
+    color: #242633;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-item.active a {
+    color: #242633;
+    font-weight: 700;
+    border-radius: 5px;
+    /*text-decoration: underline;*/
+}
+
+a.nav-link.dropdown-toggle {
+    font-weight: 500 !important;
+}
+
+a#active.nav-link.underline {
+    font-weight: 900 !important;
+    color: #242633 !important;
+    text-decoration: underline !important;
+}
+
+
+.dropdown-item {
+    padding: 5px 5px !important;
+    border-bottom: solid !important;
+    border-width: 1px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler span {
+    display: block;
+    background-color: #333;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+/* Middle Line Hamburguer Menu */
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+    width: 20px;
+    right: 0 !important;
+    transform: translateX(5px);
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 10%) rotate(-45deg);
+}
+
+
+
+/*** Section Intro Banner ***/
+#intro {
+    background: url(./assets/images/intro.webp) lightgray 50%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 24px;
+}
+
+#intro h2 {
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.6em;
+}
+
+/* Section Nosotros */
+
+
+.subtitle {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+section#nosotros p {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Section Proyectos */
+.bkg-grey {
+    background-color: #f6f6f6 !important;
+}
+
+article {
+    cursor: pointer;
+}
+
+ul.filter-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 1401px) {
+    .grid-item {
+        width: calc(33.333% - 30px) !important;
+        /* 3 columnas con gutter */
+        margin-bottom: 30px;
+        /* Espaciado vertical */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+    .grid-item {
+        width: calc(50% - 10px) !important;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .grid-item {
+        width: 100%;
+        margin-bottom: 30px;
+        /* 1 columna en móviles */
+    }
+}
+
+.overlay {
+    position: absolute;
+    /* Posiciona el overlay de manera absoluta dentro del contenedor */
+    bottom: 0;
+    /* Alinea el overlay en la parte inferior */
+    left: 0;
+    /* Alinea el overlay en la parte izquierda */
+    background-color: #1C1C1C;
+    /* Fondo oscuro */
+    color: #fff;
+    /* Texto blanco */
+    padding: 25px 75px 25px 25px;
+    /* Espaciado interno para el texto */
+}
+
+button.filter-button {
+    margin: 5px 5px;
+}
+
+.filter-button {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 8px;
+    border: solid 1px #5E5E5E;
+    background-color: transparent !important;
+    padding: 10px 40px 5px 40px;
+}
+
+.filter-button:hover {
+    /* Estilos para hover */
+    border: solid 1px  #242633 !important;
+
+}
+
+.filter-button:focus {
+    /* Estilos para focus */
+    border: solid 1px  #242633 !important;
+}
+
+img.img-item {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 4px;
+}
+
+/* Modal Proyectos */
+.modal-header {
+    padding-right: 0 !important;
+}
+
+.modal-body h2.title {
+
+    font-size: 38px;
+    color: #fff;
+    line-height: 1.6em;
+}
+
+.modal-body h2.subtitle {
+
+    font-size: 36px;
+    line-height: 0 !important;
+}
+
+.modal-body h3.subtitle {
+
+    font-size: 24px;
+    color: #fff;
+}
+
+.modal-body h3.subtitle-gold {
+
+    font-size: 24px;
+    ;
+}
+
+.modal-body p {
+    font-size: 18px;
+
+    color: #fff;
+    font-weight: 300 !important;
+}
+
+.modal-body li {
+    font-size: 22px;
+
+    color: #fff;
+    font-weight: 300 !important;
+    list-style-type: disc !important;
+}
+
+iframe.map {
+    height: 40vh;
+    filter: grayscale(100%);
+}
+
+.close-btn {
+    background: transparent url("./assets/images/close.png") center/2.5em auto no-repeat;
+    ;
+    /* Ruta a tu icono personalizado */
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.25em 0.25em;
+    border: 0;
+    border-radius: 0.375rem;
+}
+
+.wsp-icon {
+    margin-left: 15px;
+}
+
+.img-sliders {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+
+/*** Swiper Slider Botones next y prev ***/
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    left: auto;
+    position: absolute;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(75, 75, 75, 0.4);
+    top: 50%;
+    cursor: pointer;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 24px !important;
+    color: #fff !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    right: auto;
+    position: absolute;
+    top: 50%;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(75, 75, 75, 0.4);
+    top: 50%;
+    cursor: pointer;
+}
+
+/*** Section Banner Altamirano ***/
+.banner-wrapper {
+    background: url(./assets/images/altamirano-banner.png);
+    height: 40vh;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    background-position: right;
+}
+
+.banner-content {
+    z-index: 1;
+    position: relative;
+}
+
+.banner-overlay {
+    /*margin-top: 6em;*/
+}
+
+.banner-wrapper h2 {
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 40.323% */
+}
+
+.banner-wrapper h3 {
+    color:  #242633;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 25px;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    position: relative;
+    /* text-align: center; */
+    padding-left: 75px;
+}
+
+.hr-line:before {
+    content: " ";
+    height: 3px;
+    width: 55px;
+    background:  #242633;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+.banner-wrapper h4 {
+    color:  #242633;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 25px;
+    /* 78.125% */
+}
+
+.banner-wrapper p {
+
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+}
+
+.banner-wrapper li {
+    line-height: 1.8em;
+}
+
+.col-lg-6 {
+    max-width: none;
+}
+
+.overlay-wrapper {
+    width: 100%;
+    height: 30%;
+}
+
+/*.opaque-wrapper {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 50px;
+    width: 100%;
+    text-align: left;
+}
+*/
+
+/* Section Contacto */
+
+/* Formulario */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #1b1b1b inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
+
+input:focus {
+    color: #fff !important;
+}
+
+::placeholder {
+    font-size: 18px;
+
+    color: #fff !important;
+}
+
+form {}
+
+label {
+    color: #fff !important;
+}
+
+.form-floating>.form-control:focus~label::after,
+.form-floating>.form-control:not(:placeholder-shown)~label::after,
+.form-floating>.form-control-plaintext~label::after,
+.form-floating>.form-select~label::after {
+    position: absolute;
+    inset: 1rem 0.375rem;
+    z-index: -1;
+    height: 1.5em;
+    content: "";
+    background-color: #1C1C1C !important;
+    color: #fff !important;
+}
+
+input {
+    padding-top: 25px;
+    background-color: #1C1C1C !important;
+    color: #fff !important;
+    border: solid  #242633 !important;
+    border-width: 0 0 1px 0 !important;
+}
+
+textarea {
+    background-color: #1C1C1C !important;
+    color: #fff !important;
+    border: solid  #242633 !important;
+    border-width: 1px !important;
+}
+
+.form-floating {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+.form-control {
+
+    font-size: 14px !important;
+    line-height: 1.7em;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.global-btn {
+
+    font-size: 14px !important;
+    line-height: 1.8em;
+    letter-spacing: 4px;
+    background-color:  #242633 !important;
+    color: #fff !important;
+    border-color: #fff;
+    margin: 0 0 15px 0;
+    padding: 10px 40px 5px 40px !important;
+    transition: all 0.1s ease-in-out;
+    border-style: solid;
+    border-width: 0 !important;
+    border-radius: 0 !important;
+}
+
+.global-btn:hover {
+    background-color: #B48C5E !important;
+}
+
+/***  Footer ***/
+.footer-logo {
+    width: 175px;
+    height: auto;
+}
+
+.bkg-black {
+    background-color: #000;
+}
+
+/*** Footer ***/
+.footer-item {
+
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.custom-icon {
+    background: #fff;
+    border-radius: 100%;
+    color: #333;
+    display: table-cell;
+    font-size: 18px !important;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.2s;
+    vertical-align: middle !important;
+    padding-top: 20px;
+}
+
+.custom-icon:hover {
+    background:  #242633;
+}
+
+li.footer-list {
+    list-style: none;
+}
+
+li.footer-list {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    list-style: none;
+}
+
+.footer-link {
+
+    color: #fff !important;
+    font-weight: 300 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-link:hover {
+    color:  #242633 !important;
+}
+
+.powered-logo {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.powered {
+
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #000;
+}
+
+.copyrigth-container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    /* Fix Horizontal Gutter On Isotope Grid Proyectos*/
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 48% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-sliders {
+        width: 100%;
+        height: 250px;
+    }
+
+    /*** Section Banner Altamirano ***/
+    .banner-wrapper {
+        height: 60vh;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    main {
+        padding-top: 50px;
+    }
+
+    .custom-container {
+        width: 90% !important;
+    }
+
+    .navbar-toggler {
+        padding: 4px 0 !important;
+    }
+
+    .logo {
+        width: 125px;
+        height: auto;
+    }
+
+    /*** Section Intro Banner ***/
+    #intro {
+        height: 50vh !important;
+    }
+
+    #intro h1 {
+        font-size: 68px;
+    }
+
+    #intro h2 {
+        font-size: 32px;
+        line-height: 1.2em;
+    }
+
+    ul.navbar-nav {
+        align-items: start;
+    }
+
+    .pt-5 {
+        padding-top: 3rem !important;
+    }
+
+    .pb-5 {
+        padding-bottom: 3rem !important;
+    }
+
+    .nav-btn {
+        font-size: 12px;
+    }
+
+    ul.navbar-nav {
+        padding-top: 20px;
+    }
+
+    .navbar-collapse {
+        padding-bottom: 20px;
+    }
+
+    .dropdown-menu {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .dropdown-item {
+        border-bottom: solid !important;
+        border-width: 1px !important;
+    }
+
+    a.nav-link {
+        font-size: 14px !important;
+        /* padding: 0.5rem !important; */
+    }
+
+    ul.filter-buttons {
+        flex-direction: column !important;
+    }
+
+    /* Modal Proyectos */
+
+    .modal-body h3.subtitle {
+        font-size: 16px !important;
+    }
+
+    .modal-body h3.subtitle-gold {
+        font-size: 16px !important;
+    }
+
+    .modal-body h2.title {
+        font-size: 28px;
+    }
+
+    .modal-body h2.subtitle {
+        font-size: 28px;
+    }
+
+    .modal-body p {
+        font-size: 16px !important;
+    }
+
+    .modal-body li {
+        font-size: 16px !important;
+    }
+
+    .wsp-icon {
+        width: 50px;
+    }
+
+    /* Banner Altamirano*/
+    .banner-wrapper h2 {
+        font-size: 38px;
+    }
+
+    .banner-wrapper h3 {
+        font-size: 22px;
+    }
+
+    .hr-line:before {
+        content: " ";
+        height: 3px;
+        width: 55px;
+        background:  #242633;
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    .banner-wrapper h4 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    /* Banner Altamirano */
+    .banner-wrapper {
+        height: 55vh;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    nav.navbar {
+        padding: 15px 0;
+    }
+
+    .dropdown-item {
+        padding: 5px 25px !important;
+        border: none !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    ul.navbar-nav {
+        align-items: center;
+    }
+
+    .pr-50 {
+        padding-right: 50px !important;
+    }
+}
+
+@media (max-width: 1400px) {
+
+    a.nav-link {
+        margin-left: 0 !important;
+    }
+}
