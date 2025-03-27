@@ -12,8 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="grid-item ${project.filterClass}">
             <article data-bs-target="#modal-${project.id}" data-bs-toggle="modal">
               <img class="img-item" src="${project.image}" alt="${project.title}">
-              <h6 class="title text-center pt-4">${project.title}</h6>
+              <h6 class="title text-center pt-4 fs-5">${project.title}</h6>
             </article>
+                <!-- Botón para abrir el modal -->
+    <div class="text-center">
+      <a class="ver-proyecto" data-bs-target="#modal-${project.id}" data-bs-toggle="modal">
+        Ver proyecto
+      </a>
+    </div>
           </div>
 
           <!-- Modal -->
@@ -67,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         iso.layout();
-      }, 100);
+      }, 500);
 
       // Filtros
       document.querySelectorAll(".filter-button-group button").forEach((button) => {

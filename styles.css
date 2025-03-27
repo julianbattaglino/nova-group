@@ -455,6 +455,10 @@ ul.filter-buttons {
     justify-content: center;
 }
 
+a.ver-proyecto {
+    cursor: pointer;
+}
+
 
 @media (min-width: 1401px) {
     .grid-item {
