@@ -86,7 +86,7 @@
     right: -25px;
     left: auto;
 }
-/*
+
 .slick-prev:before
 {
     content: '←';
@@ -95,7 +95,7 @@
 {
     content: '→';
 }
-*/
+
 .slick-next
 {
     right: -25px;
@@ -105,7 +105,7 @@
     right: auto;
     left: -25px;
 }
-/*
+
 .slick-next:before
 {
     content: '→';
@@ -114,7 +114,7 @@
 {
     content: '←';
 }
-*/
+
 
 /* Dots */
 .slick-dotted.slick-slider

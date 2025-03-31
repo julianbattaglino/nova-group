@@ -14,12 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
               <img class="img-item" src="${project.image}" alt="${project.title}">
               <h6 class="title text-center pt-4 fs-5">${project.title}</h6>
             </article>
-                <!-- Botón para abrir el modal -->
-    <div class="text-center">
-      <a class="ver-proyecto" data-bs-target="#modal-${project.id}" data-bs-toggle="modal">
-        Ver proyecto
-      </a>
-    </div>
+            <div class="text-center">
+              <a class="ver-proyecto" data-bs-target="#modal-${project.id}" data-bs-toggle="modal">
+                Ver proyecto
+              </a>
+            </div>
           </div>
 
           <!-- Modal -->
@@ -60,31 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       container.innerHTML = projectHTML; // Insertamos todo de una vez
 
-      let iso = new Isotope(container, {
-        itemSelector: ".grid-item",
-        layoutMode: "masonry",
-        percentPosition: true,
-        fitWidth: true,  // Importante para que respete los anchos
-        masonry: {
-          columnWidth: ".grid-item",
-          gutter: 10, // Mantiene el espacio entre elementos
-        },
-      });
-
-      setTimeout(() => {
-        iso.layout();
-      }, 500);
-
-      // Filtros
-      document.querySelectorAll(".filter-button-group button").forEach((button) => {
-        button.addEventListener("click", function () {
-          let filterValue = this.getAttribute("data-filter");
-          iso.arrange({ filter: filterValue });
-
-          document.querySelectorAll(".filter-button-group button").forEach((btn) => btn.classList.remove("active"));
-          this.classList.add("active");
-        });
-      });
+      // Asegurarse de que todas las tarjetas sean visibles por defecto
+      const items = document.querySelectorAll(".grid-item");
+      items.forEach((item) => item.classList.add("show"));
 
       // Inicializar Swiper para cada modal después de renderizar
       projects.forEach(project => {
@@ -98,6 +75,29 @@ document.addEventListener("DOMContentLoaded", () => {
             el: ".swiper-pagination",
             clickable: true,
           },
+        });
+      });
+
+      // Filtrado con Vanilla JS
+      const filterButtons = document.querySelectorAll(".filter-button-group button");
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const filterValue = this.getAttribute("data-filter");
+          const items = document.querySelectorAll(".grid-item");
+
+          items.forEach((item) => {
+            if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+              item.classList.remove("hide");
+              setTimeout(() => item.classList.add("show"), 10); // Agregar clase `show` con un pequeño retraso
+            } else {
+              item.classList.remove("show");
+              setTimeout(() => item.classList.add("hide"), 300); // Agregar clase `hide` después de la transición
+            }
+          });
+
+          // Actualizar la clase activa en los botones
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
         });
       });
     })

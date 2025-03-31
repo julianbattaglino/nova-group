@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://use.typekit.net/uso3hcv.css");
 
 @font-face {
     font-family: 'Graphik';
@@ -68,7 +69,7 @@ html {
 }
 
 body {
-    font-family: "Graphik", sans-serif !important;
+    font-family: "Inter", sans-serif !important;
 }
 
 /* SCROLLBAR STYLES */
@@ -176,6 +177,7 @@ main {
 .blue-branding {
     color: #242633 !important;
 }
+
 
 .rojo-branding {
     color: #94122c !important;
@@ -429,6 +431,19 @@ a#active.nav-link.underline {
 
 /* Section Nosotros */
 
+.w-90 {
+    width: 90% !important;
+}
+
+.slick-prev, .slick-next {
+    top: 40% !important;
+}
+.slick-prev:before {
+    content: url("assets/images/left-arrow.svg") !important;
+}
+.slick-next:before {
+    content: url("assets/images/right-arrow.svg") !important;
+}
 
 .subtitle {
     font-size: 32px;
@@ -442,6 +457,28 @@ section#nosotros p {
 }
 
 /* Section Proyectos */
+
+#projects-container {
+    column-gap: 20px;
+}
+
+/* Transición para los elementos de la grilla */
+.grid-item {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Mostrar elementos con animación */
+  .grid-item.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Ocultar elementos sin ocupar espacio */
+  .grid-item.hide {
+    display: none !important;
+  }
 .bkg-grey {
     background-color: #f6f6f6 !important;
 }
@@ -510,7 +547,7 @@ button.filter-button {
     border-radius: 8px;
     border: solid 1px #5E5E5E;
     background-color: transparent !important;
-    padding: 10px 40px 5px 40px;
+    padding: 5px 25px 5px 25px;
 }
 
 .filter-button:hover {
@@ -526,7 +563,8 @@ button.filter-button {
 
 img.img-item {
     width: 100%;
-    max-height: 250px;
+    max-height: 230px;
+    object-fit: cover;
     border-radius: 4px;
 }
 
@@ -602,6 +640,9 @@ iframe.map {
 }
 
 /*** Swiper Slider Botones next y prev ***/
+.swiper-pagination-bullet-active {
+    background: #6b6f89 !important;
+}
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
     left: auto;
